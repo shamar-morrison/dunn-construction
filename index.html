@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- --------- JQUERY --------->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+
+    <!-- --------- BOOTSTRAP --------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- --------- GOOGLE FONTS --------->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- --------- FONT AWESOME --------->
+    <script src="https://kit.fontawesome.com/3c0c213cb2.js" crossorigin="anonymous"></script>
+
+    <!-- --------- OTHER STYLESHEETS --------->
+    <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="css/lg-transitions.min.css"> -->
+    <link rel="stylesheet" href="css/lightgallery.min.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/media.min.css">
+    <title>Dunn Construction</title>
+</head>
+
+<body>
+    <!-- wrapper div to prevent horizontal scrolling on mobile -->
+    <div class="overflow-x-hidden">
+        <!-- NAVBAR -->
+        <div id="navigation">
+            <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
+                <div class="container">
+                    <a href="#home" class="navbar-brand brand">DUNN</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content"
+                        aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- NAVBAR LINKS -->
+                    <div class="collapse navbar-collapse" id="navbar-content">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a href="#home" class="nav-link home active">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#services" class="nav-link services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#projects" class="nav-link projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#articles" class="nav-link articles">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact" class="nav-link contact">Contact</a>
+                            </li class="jhelp">
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- HERO -->
+        <section id="home">
+           <!--  HERO NAVBAR -->
+            <div class="hero-img">
+                <nav class="hero-nav container">
+                    <a href="#home" class="hero-navbar-brand">DUNN</a>
+                    <ul class="hero-nav-links">
+                        <li class="hero-nav-item">
+                            <a href="#home" class="hero-link nav-link">home</a>
+                        </li>
+                        <li class="hero-nav-item">
+                            <a href="#services" class="hero-link nav-link">services</a>
+                        </li>
+                        <li class="hero-nav-item">
+                            <a href="#projects" class="hero-link nav-link">projects</a>
+                        </li>
+                        <li class="hero-nav-item">
+                            <a href="#articles" class="hero-link nav-link">blog</a>
+                        </li>
+                        <li class="hero-nav-item">
+                            <a href="#contact" class="hero-link nav-link">contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="hero-img-bg"></div>
+                <div class="hero-title">
+                    <h3 class="hero-title-small hero-anim">welcome to dunn construction</h3>
+                    <h5 class="hero-title-large hero-anim">Building an <span>Innovative</span> Future</h5>
+                    <i class="fas fa-chevron-circle-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="main-section-padding">
+            <div class="container">
+                <i class="fas fa-cog section-icon"></i>
+                <h5 class="section-small-title">our company services</h5>
+                <h6 class="section-big-title">what we're offering</h6>
+                <div class="row">
+                    <!-- SERVICE 1 -->
+                    <div class="col-lg-4 col-md-12 text-center service-body" data-delay=".3s">
+                        <div class="service-img service-img-01">
+                            <i class="fas fa-hard-hat position-top"></i>
+                        </div>
+                        <div class="service-img-body">
+                            <h5 class="service-img-title">industry construction</h5>
+                            <p class="service-img-desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Eum voluptate nisi iure in debitis vitae.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- SERVICE 2 -->
+                    <div class="col-lg-4 col-md-12 text-center service-body" data-delay=".6s">
+                        <div class="service-img service-img-02">
+                            <i class="fas fa-tools position-middle"></i>
+                        </div>
+                        <div class="service-img-body">
+                            <h5 class="service-img-title">electronic engineering</h5>
+                            <p class="service-img-desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Eum voluptate nisi iure in debitis vitae.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- SERVICE 3 -->
+                    <div class="col-lg-4 col-md-12 text-center service-body" data-delay=".9s">
+                        <div class="service-img service-img-03">
+                            <i class="fas fa-drafting-compass position-top"></i>
+                        </div>
+                        <div class="service-img-body">
+                            <h5 class="service-img-title">Petroleum & Gas</h5>
+                            <p class="service-img-desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Eum voluptate nisi iure in debitis vitae.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- VIDEO SECTION -->
+        <section id="video-section">
+            <div class="video-section-img container-fluid">
+                <div class="video-section-bg-dark"></div>
+                <h5 class="video-section-small-title">we're building the future</h5>
+                <h6 class="video-section-big-title">trusted industry & factory service provider</h6>
+                <div class="row justify-content-center">
+                    <button class="btn-yellow">discover more</button>
+                </div>
+                <!-- VIDEO PLAYER -->
+                <div class="row justify-content-center video-player">
+                    <video id="video" class="video-js" controls preload="auto" width="1100" height="450"
+                        poster="images/video-poster.jpg" data-setup='{}'>
+                        <source src="media/video.mp4.mp4" type="video/mp4" />
+                        <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a
+                            web browser that
+                            <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                        </p>
+                    </video>
+                </div>
+            </div> <!-- /.container-fluid -->
+        </section>
+        <!-- FUN FACTS -->
+        <section id="fun-facts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <i class="fas fa-cog section-icon"></i>
+                        <h5 class="section-small-title">fun facts</h5>
+                        <h6 class="section-big-title">numbers speak volumes</h6>
+                        <p class="fun-facts-desc">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam nam vel debitis quasi
+                            minima
+                            ad non obcaecati dolorum expedita nostrum.
+                        </p>
+                        <div class="btn-center"><button class="btn-yellow">discover more</button></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="container">
+                            <div class="row">
+                                <!-- BOX 1    -->
+                                <div class="col-md-6">
+                                    <div class="fun-facts-box">
+                                        <i class="fas fa-clipboard-check"></i>
+                                        <h1 class="box-number" data-target="4070" data-speed="300">0</h1>
+                                        <p>projects completed</p>
+                                    </div>
+                                </div>
+                                <!-- BOX 2    -->
+                                <div class="col-md-6">
+                                    <div class="fun-facts-box">
+                                        <i class="fas fa-laugh-beam"></i>
+                                        <h1 class="box-number" data-target="7570" data-speed="320">0</h1>
+                                        <p>happy clients</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container extra-padding">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <!-- BOX 3    -->
+                                    <div class="fun-facts-box">
+                                        <i class="fas fa-home"></i>
+                                        <h1 class="box-number" data-target="8374" data-speed="370">0</h1>
+                                        <p>new homes built</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <!-- BOX 4    -->
+                                    <div class="fun-facts-box">
+                                        <i class="fas fa-tools"></i>
+                                        <h1 class="box-number" data-target="5383" data-speed="350">0</h1>
+                                        <p>expert contractors</p>
+                                    </div>
+                                </div> <!-- /.col-md-6 -->
+                            </div> <!-- /.row -->
+                        </div> <!-- /.extra-padding -->
+                    </div> <!-- /.col-lg-6 -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </section>
+        <!-- PROJECTS -->
+        <section id="projects" class="main-section-padding">
+            <i class="fas fa-cog section-icon"></i>
+            <h5 class="section-small-title">our recent work</h5>
+            <h6 class="section-big-title">completed projects</h6>
+            <div class="projects-container" id="light-gallery">
+
+                <div class="project-item" data-src="images/project-11.jpg">
+                    <img src="images/project-11-thumb.jpg" alt="">
+                </div>
+                <div class="project-item" data-src="images/project-10.jpg"">
+                    <img src=" images/project-10-thumb.jpg" alt="">
+                </div>
+                <div class="project-item" data-src="images/project-09.jpg"">
+                    <img src=" images/project-09-thumb.jpg" alt="">
+                </div>
+                <div class="project-item" data-src="images/project-08.jpg"">
+                    <img src=" images/project-08-thumb.jpg" alt="">
+                </div>
+                <div class="project-item" data-src="images/project-07.jpg">
+                    <img src="images/project-07-thumb.jpg" alt="">
+                </div>
+                <div class="project-item" data-src="images/project-06.jpg"">
+                    <img src=" images/project-06-thumb.jpg" alt="">
+                </div>
+                <div class="project-item" data-src="images/project-05.jpg"">
+                    <img src=" images/project-05-thumb.jpg" alt="">
+                </div>
+                <div class="project-item" data-src="images/project-04.jpg"">
+                    <img src=" images/project-04-thumb.jpg" alt="">
+                </div>
+                <div class="project-item" data-src="images/project-03.jpg">
+                    <img src="images/project-03-thumb.jpg" alt="">
+                </div>
+                <div class="project-item" data-src="images/project-02.jpg"">
+                    <img src=" images/project-02-thumb.jpg" alt="">
+                </div>
+                <div class="project-item" data-src="images/project-01.jpg"">
+                    <img src=" images/project-01-thumb.jpg" alt="">
+                </div>
+                <div class="project-item" data-src="images/project-06.jpg"">
+                    <img src=" images/project-06-thumb.jpg" alt="">
+                </div>
+
+            </div>
+        </section>
+        <!-- CTA -->
+        <section id="cta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="cta-title">get a free quote today</h3>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="btn-center"><button class="btn-grey float-right">contact us</button></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ARTICLES -->
+        <section id="articles">
+            <div class="articles-section-img container-fluid">
+                <i class="fas fa-cog section-icon"></i>
+                <div class="articles-section-bg-dark"></div>
+                <div class="container">
+                    <h5 class="articles-section-small-title">latest blog posts</h5>
+                    <h6 class="articles-section-big-title">news & articles</h6>
+                    <div class="row">
+                        <!-- BLOG POST 1 -->
+                        <div class="col-md-4 blog-post" data-delay=".3s">
+                            <div class="article-img article-img-01">
+                                <div class="article-date">
+                                    <p>aug 18</p>
+                                </div>
+                            </div>
+                            <div class="article-content">
+                                <h5 class="article-title">how we are redefining the industrial frontier</h5>
+                                <p class="article-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Corporis,
+                                    ea.</p>
+                                <hr class="separator">
+                                <a href="#contact" class="read-more">read more</a>
+                                <i class="fas fa-arrow-alt-circle-right read-more-icon"></i>
+                            </div>
+                        </div>
+                        <!-- BLOG POST 2 -->
+                        <div class="col-md-4 blog-post" data-delay=".6s">
+                            <div class="article-img article-img-02">
+                                <div class="article-date">
+                                    <p>aug 18</p>
+                                </div>
+                            </div>
+                            <div class="article-content">
+                                <h5 class="article-title">how we are redefining the industrial frontier</h5>
+                                <p class="article-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Corporis,
+                                    ea.</p>
+                                <hr class="separator">
+                                <a href="#contact" class="read-more">read more</a>
+                                <i class="fas fa-arrow-alt-circle-right read-more-icon"></i>
+                            </div>
+                        </div>
+                        <!-- BLOG POST 3 -->
+                        <div class="col-md-4 blog-post" data-delay=".9s">
+                            <div class="article-img article-img-03">
+                                <div class="article-date">
+                                    <p>aug 18</p>
+                                </div>
+                            </div>
+                            <div class="article-content">
+                                <h5 class="article-title">how we are redefining the industrial frontier</h5>
+                                <p class="article-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Corporis,
+                                    ea.</p>
+                                <hr class="separator">
+                                <a href="#contact" class="read-more">read more</a>
+                                <i class="fas fa-arrow-alt-circle-right read-more-icon"></i>
+                            </div>
+                        </div> <!-- /.col-md-4 -->
+                    </div> <!-- /.row -->
+                </div>
+            </div>
+        </section>
+        <!-- CONTACT -->
+        <section id="contact">
+            <div class="contact-section-img container-fluid">
+                <div class="contact-section-bg-layer"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <i class="fas fa-cog section-icon contact-section-padding"></i>
+                            <h5 class="section-small-title">contact us</h5>
+                            <h6 class="section-big-title">let's talk today</h6>
+                            <p class="fun-facts-desc">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, odio nisi neque
+                                nulla
+                                perspiciatis debitis!
+                            </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="contact-form contact-section-padding">
+                                <p class="contact-form-desc">Let us know if you have any questions or queries and we'll
+                                    get
+                                    back to
+                                    you asap!.
+                                </p>
+                                <!-- FORM -->
+                                <form action="#" id="contact-form">
+                                    <input type="text" placeholder="Name" id="input-name" class="input-field"
+                                        name="name" required>
+                                    <input type="email" placeholder="Email Address" id="input-email" class="input-field"
+                                        name="email" required>
+                                    <input type="number" placeholder="Phone Number" id="input-phone" class="input-field"
+                                        name="phone">
+                                    <textarea id="message" name="message" id="text-area-message" spellcheck="true"
+                                        placeholder="Message" class="input-field" required></textarea>
+                                    <button class="btn-yellow">send message</button>
+                                </form>
+                            </div> <!-- /.contact-form -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <h4 class="footer-text">&copy; 2020 Dunn Incorporated.</h4>
+            </div>
+        </footer>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+</script>
+<script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+<script src="js/lightgallery.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>
