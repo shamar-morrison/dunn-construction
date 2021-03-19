@@ -196,6 +196,11 @@ funFactObs.observe(funFacts);
  */
 
 window.addEventListener('load', () => {
+  // hide-preloader
+  document.querySelector('.preloader').style.opacity = '0';
+  document.querySelector('.preloader').style.visibility = 'hidden';
+  document.querySelector('body').style.overflowY = 'visible';
+
   document.querySelectorAll('.hero-anim').forEach(el => {
     setTimeout(() => {
       if (el.classList.contains('hero-title-small')) {
@@ -206,6 +211,8 @@ window.addEventListener('load', () => {
     }, 500);
   });
   setTimeout(() => {
+    document.querySelector('.fa-chevron-circle-down').style.opacity = '0';
     document.querySelector('.fa-chevron-circle-down').style.animation = 'arrow-anim 1s ease-in-out infinite alternate';
+    document.querySelector('.fa-chevron-circle-down').style.opacity = '1';
   }, 1300);
 });
