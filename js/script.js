@@ -149,13 +149,12 @@ const blogObsCallback = entries => {
 };
 
 /** Video section */
-const videoObsCallback = (entries, obs) => {
+const videoObsCallback = entries => {
   const [video] = entries;
   if (video.isIntersecting) {
     video.target.style.opacity = '1';
     video.target.style.transform = 'translateY(0)';
   }
-  // obs.unobserve(video); // <- throws TypeError
 };
 
 /** Lazy load service section images */
