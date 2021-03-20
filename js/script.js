@@ -7,7 +7,7 @@ const servicesSec = document.querySelector('#services');
 const heroSec = document.querySelector('#home');
 const sections = document.querySelectorAll('section');
 
-const navLinks = document.querySelector('.navbar-nav');
+const navLinks = document.querySelector('.navbar-collapse');
 const navbar = document.querySelector('.navbar');
 const heroImg = document.querySelector('.hero-img');
 const services = document.querySelectorAll('.service-body');
@@ -32,6 +32,12 @@ lightGallery(
  */
 
 const navbarEventListener = event => {
+  // minize navbar toggler when link tapped (mobile)
+  if (navLinks.classList.contains('show')) {
+    // navLinks.classList.add('collapsing');
+    navLinks.classList.remove('show');
+    // navLinks.classList.remove('collapsing');
+  }
   const navLink = event.target;
   if (navLink.classList.contains('nav-link')) {
     const section = event.target.getAttribute('href');
@@ -62,7 +68,7 @@ document.querySelector('.navbar-brand').addEventListener('click', event => {
   smoothScrollTo(heroSec);
 });
 
-document.querySelector('.navbar-nav').addEventListener('click', event => {
+navLinks.addEventListener('click', event => {
   event.preventDefault();
   navbarEventListener(event);
 });
@@ -124,24 +130,25 @@ sections.forEach(section => sectionObserver.observe(section));
  * Lazy-loading certain elements
  */
 
-const imagesObsCallback = (entries, obs) => {
+/** Service section images */
+const imagesObsCallback = entries => {
   if (entries[0].isIntersecting) {
     entries.forEach(entry => {
       entry.target.style.animation = `service-anim 1s ${entry.target.dataset.delay} forwards ease`;
     });
-    services.forEach(service => obs.unobserve(service));
   }
 };
 
-const blogObsCallback = (entries, obs) => {
+/** Articles section images */
+const blogObsCallback = entries => {
   if (entries[0].isIntersecting) {
     entries.forEach(entry => {
       entry.target.style.animation = `service-anim 1s ${entry.target.dataset.delay} forwards ease`;
     });
-    blogPosts.forEach(blog => obs.unobserve(blog));
   }
 };
 
+/** Video section */
 const videoObsCallback = (entries, obs) => {
   const [video] = entries;
   if (video.isIntersecting) {
