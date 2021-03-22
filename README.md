@@ -1,5 +1,5 @@
 # Dunn Construction Landing Page
-I created this website using HTML, CSS/SCSS and JS.
+I created this landing page style website using HTML, CSS/SCSS and JS.
 
 The following libraries/frameworks were also used:
 - JQuery
