@@ -201,7 +201,7 @@ funFactObs.observe(funFacts);
  * window.onload
  */
 
-window.addEventListener('load', () => {
+window.addEventListener('load', () => { 
   // hide-preloader
   document.querySelector('.preloader').style.opacity = '0';
   document.querySelector('.preloader').style.visibility = 'hidden';
