@@ -1,0 +1,222 @@
+// -------------------- MEDIA QUERIES GO HERE -----------------------
+@import 'styles';
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// iPhone 5/SE, idk why they have to be so specific
+@media (device-aspect-ratio: 40/71) {
+	.hero-title {
+		.hero-title-large {
+			font-size: 3.4rem !important;
+		}
+	}
+}
+
+// Small devices (Portrait phones, 576px or less)
+@media (max-width: 576px) {
+	.articles-section-img {
+		min-height: 2100px;
+	}
+	.article-desc {
+		font-size: 0.975rem;
+	}
+	// prevents horizontal scrolling
+	.overflow-x-hidden {
+		position: relative;
+		overflow-x: hidden;
+	}
+
+	#fun-facts {
+		.section-big-title,
+		.section-small-title,
+		i,
+		.fun-facts-desc {
+			text-align: center !important;
+		}
+
+		.col-md-6 {
+			padding: 0 15px !important;
+		}
+		.btn-yellow {
+			margin-bottom: 35px;
+		}
+	}
+
+	.fun-facts-desc {
+		width: 100%;
+	}
+
+	.btn-center {
+		display: grid;
+		text-align: center;
+	}
+
+	#cta {
+		button {
+			text-align: center;
+		}
+
+		.cta-title {
+			text-align: center;
+		}
+	}
+
+	.projects-container {
+		grid-template-columns: 100vw;
+	}
+
+	.hero-title {
+		padding-top: 20vh;
+
+		.hero-title-large {
+			font-size: 4rem;
+		}
+	}
+
+	.hero-nav {
+		display: none;
+	}
+
+	.service-img-body {
+		.service-img-title {
+			padding-bottom: 6px;
+		}
+	}
+
+	.video-section-big-title {
+		font-size: 2.4rem;
+	}
+	.video-section-small-title {
+		padding-top: 170px;
+	}
+	#video-section {
+		margin-bottom: 300px;
+
+		.video-section-img {
+			height: 750px;
+
+			.btn-yellow {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.video-js,
+	.vjs-poster {
+		background-color: transparent;
+	}
+
+	.contact-section-img {
+		.section-big-title,
+		.section-small-title,
+		i {
+			text-align: center !important;
+		}
+
+		.fun-facts-desc {
+			text-align: center;
+		}
+	}
+
+	.contact-form {
+		padding: 25px;
+		border-right: 5px solid $yellow;
+		width: 100%;
+	}
+
+	footer {
+		margin-top: 730px;
+	}
+
+	.contact-form {
+		margin-top: 0;
+	}
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, between 768px and 991px)
+@media (min-width: 768px) and (max-width: 991px) {
+	.overflow-x-hidden {
+		position: relative;
+		overflow-x: hidden;
+	}
+
+	#video-section {
+		.video-section-img {
+			min-height: 700px;
+		}
+	}
+
+	#fun-facts {
+		.section-big-title,
+		.section-small-title,
+		i,
+		.fun-facts-desc {
+			text-align: center !important;
+			width: 100%;
+			margin-bottom: 30px;
+		}
+	}
+
+	.contact-form {
+		margin-top: 0;
+		width: 100%;
+	}
+
+	.articles-section-img {
+		min-height: 880px;
+	}
+
+	.service-img-body {
+		.service-img-desc {
+			font-size: 1.1rem;
+		}
+		.service-img-title {
+			font-size: 1.4rem;
+		}
+	}
+
+	.fun-facts-desc {
+		font-size: 1.1rem;
+	}
+
+	.contact-section-img {
+		.section-big-title,
+		.section-small-title,
+		i {
+			text-align: center !important;
+		}
+
+		.fun-facts-desc {
+			text-align: center;
+			width: 100%;
+		}
+	}
+
+	footer {
+		position: relative;
+		top: 300px;
+	}
+
+	.btn-center {
+		display: grid;
+		justify-content: center;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	.contact-form {
+		width: 100%;
+	}
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
